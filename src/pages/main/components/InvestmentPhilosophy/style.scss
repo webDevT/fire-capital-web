@@ -1,0 +1,70 @@
+.widget-why-choose-us {
+  padding-top: 160px;
+  padding-bottom: 160px;
+  .h2 {
+    margin-bottom: 80px;
+  }
+}
+.investment-philosophy__item {
+  width: 344px;
+  max-width: 100%;
+  height: 441px;
+  background: linear-gradient(180deg, rgba(197, 202, 254, 0.22) 0%, rgba(197, 202, 254, 0) 100%);
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  padding-top: 81px;
+  border-radius: 20px;
+  padding-left: 5px;
+  padding-right: 5px;
+  .h2 {
+    margin-bottom: 5px;
+  }
+}
+.investment-philosophy__img-wrapper {
+  height: 150px;
+}
+.investment-philosophy__text {
+  font-size: 18px;
+  font-weight: 500;
+}
+
+@media (max-width: 767.5px) {
+  .widget-why-choose-us .h2 {
+    margin-bottom: 14.359vw;
+  }
+  .investment-philosophy__item {
+    width: 100%;
+    min-height: 94.872vw;
+    height: auto;
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: flex-end;
+    padding-top: 12.051vw;
+    padding-bottom: 14.615vw;
+    margin-bottom: 20.513vw;
+    .investment-philosophy__img-wrapper {
+      height: auto;
+    }
+    img {
+      height: 28.974vw;
+    }
+    .h2 {
+      text-align: center;
+      font-size: 12.308vw;
+      margin-bottom: 1.282vw;
+    }
+  }
+  .investment-philosophy__text {
+    font-size: 4.615vw;
+    margin-bottom: 14.615vw;
+  }
+  .widget-why-choose-us {
+    padding-top: 25.641vw;
+    padding-bottom: 25.641vw;
+  }
+  .investment-philosophy__item:last-child {
+    margin-bottom: 0;
+  }
+}

@@ -1,0 +1,43 @@
+{
+  "parserOptions": {
+    "ecmaVersion": 2022,
+    "sourceType": "module",
+    "allowImportExportEverywhere": true,
+    "requireConfigFile": false
+  },
+  "env": {
+    "es6": true
+  },
+  "globals": {
+    "chrome": "readonly"
+  },
+  "parser": "@typescript-eslint/parser",
+  "rules": {
+    "max-len": ["error", {
+      "ignoreComments": true,
+      "code": 128,
+      "tabWidth": 2,
+      "ignoreTrailingComments": false,
+      "ignoreUrls": true,
+      "ignoreStrings": false,
+      "ignoreTemplateLiterals": false,
+      "ignoreRegExpLiterals": true
+    }],
+    "no-magic-numbers": ["error", {
+      "ignore": [-1, 0, 1, 2, 3, 4, 5, 9, 10, 36, 60, 100, 200, 400, 401, 403, 404, 406, 409, 412, 422, 500, 503, 1000, 5000],
+      "ignoreArrayIndexes": true,
+      "enforceConst": true
+    }],
+    "no-console": ["error"],
+    "no-underscore-dangle": ["error", {
+      "allowAfterThis": true,
+      "enforceInMethodNames": true
+    }],
+    "no-restricted-syntax": [
+      "error", "ForInStatement", "LabeledStatement", "WithStatement"
+    ],
+    "no-constant-condition": ["error", {
+      "checkLoops": false
+    }]
+  }
+}

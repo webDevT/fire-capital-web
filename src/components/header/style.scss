@@ -1,0 +1,256 @@
+.header__logo {
+  img {
+    width: 251px;
+  }
+}
+.header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding-top: 48px;
+  color: #fff;
+  font-size: 18px;
+  z-index: 999;
+  .container {
+    width: 1393px;
+    max-width: 95vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  a:hover,
+  a {
+    color: #fff;
+  }
+  a.active {
+    color: #E45E13;
+    font-weight: 500;
+  }
+  .button {
+    margin-left: 45px;
+  }
+}
+.header__logo {
+  top: -7px;
+  position: relative;
+}
+.header__left {
+  display: flex;
+  align-items: center;
+}
+.menu {
+  a {
+    margin-left: 55px;
+    color: #fff;
+  }
+}
+.lets-talk {
+  color: #fff;
+  margin-right: 32px;
+  display: flex;
+  align-items: center;
+}
+.lets-talk:after {
+  content: url('../src/assets/svg/material-symbols-call.svg');
+  margin-left: 8px;
+  margin-top: 4px;
+}
+.header__right {
+  display: flex;
+  align-items: center;
+}
+.button.button--transparent {
+  height: 48px;
+  background: transparent;
+  border: 2px solid $orange;
+  font-size: 16px;
+  color: $orange;
+}
+.button.button--transparent:hover {
+  color: $orange;
+  background: rgba(240, 125, 0, 0.05);
+  box-shadow: none;
+}
+.button.button--transparent:focus {
+  background: rgba(240, 125, 0, 0.15);
+  color: $orange;
+}
+.header.white_scheme {
+  a {
+    color: $bodyblue;
+  }
+  a.active {
+    color: #04163D;
+    font-weight: 500;
+  }
+  .button {
+    color: $orange;
+  }
+  .button:hover {
+    color: $orange;
+  }
+  .lets-talk:after {
+    content: url('@/assets/svg/material-symbols_call2.svg');
+  }
+}
+@media (max-width: 1440px) {
+  .menu a {
+    margin-left: 30px;
+  }
+  .header .button {
+    margin-left: 30px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .header__logo img {
+    width: 180px;
+  }
+  .header {
+    font-size: 16px;
+  }
+  .header .button {
+    margin-left: 20px;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  .lets-talk {
+    margin-right: 15px;
+  }
+  .menu a {
+    margin-left: 20px;
+  }
+  .header__logo {
+    top: -4px;
+  }
+}
+
+@media (max-width: 992px) {
+  .header {
+    font-size: 13px;
+    padding-top: 25px;
+  }
+  .header__logo img {
+    width: 150px;
+  }
+  .header .button {
+    font-size: 12px;
+    height: 33px;
+    margin-left: 10px;
+    padding-left: 5px;
+    padding-right: 5px;
+    border-radius: 10px;
+  }
+  .menu a {
+    margin-left: 15px;
+  }
+  .lets-talk:after {
+    margin-left: 0px;
+    transform: scale(0.7);
+  }
+  .header__logo {
+    top: -3px;
+  }
+}
+
+@media (max-width: 767px) {
+  .header__right {
+    display: none;
+  }
+  .menu {
+    display: none;
+  }
+  .menu__btn {
+    cursor: pointer;
+    position: relative;
+    z-index: 999;
+  }
+  .menu__row {
+    width: 6.154vw;
+    height: 0.769vw;
+    margin-bottom: 1.026vw;
+    background: #fff;
+    transition: all 0.3s;
+  }
+  .menu__row:last-child {
+    margin-bottom: 0;
+  }
+  .header {
+    padding-top: 5vw;
+    .container {
+      max-width: 91.795vw;
+    }
+  }
+  .header__logo img {
+    width: 48.974vw;
+  }
+  .header.white_scheme {
+    .menu__row {
+      background: #04163d;
+    }
+  }
+  .header__left {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .header__left.isActive {
+    .menu__row:last-child {
+      display: none;
+    }
+    .menu__row:nth-child(2) {
+      transform: rotate(45deg);
+      position: relative;
+      top: -0.8vw;
+      margin-bottom: 0;
+    }
+    .menu__row:first-child {
+      transform: rotate(-45deg);
+      margin-bottom: 0;
+    }
+    .menu {
+      display: block;
+      position: absolute;
+      top: 0;
+      left: 0;
+      flex-direction: column;
+      display: flex;
+      background: linear-gradient(180deg, #020c63 0%, #0314ac 100%);
+      width: 100%;
+      min-height: 100vh;
+      padding-top: 17vw;
+      z-index: 998;
+      a {
+        padding-top: 6.154vw;
+        padding-bottom: 6.154vw;
+        font-size: 6.154vw;
+        margin-left: 0;
+        border-top: 0.5px solid rgba(255, 255, 255, 0.4);
+        padding-left: 4.103vw;
+      }
+      a:last-child {
+        border-bottom: 0.5px solid rgba(255, 255, 255, 0.4);
+      }
+    }
+
+    .header__logo {
+      z-index: 999;
+      position: relative;
+    }
+  }
+  .header.white_scheme .header__left.isActive {
+    .menu {
+      a {
+        color: #fff;
+      }
+    }
+    .menu__row {
+      background: #fff;
+    }
+  }
+  .header__logo {
+    top: 0px;
+  } 
+}

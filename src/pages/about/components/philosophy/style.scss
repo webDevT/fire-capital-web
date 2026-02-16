@@ -1,0 +1,42 @@
+section.widget-philosophy {
+  padding-bottom: 160px;
+  .h2 {
+    text-align: left;
+    width: 955px;
+    max-width: 100%;
+    margin-bottom: 80px;
+  }
+}
+
+.philosophy__icon-wrapper {
+  min-height: 65px;
+}
+.philosophy__item {
+  background: linear-gradient(180deg, rgba(197, 202, 254, 0.22) 0%, rgba(197, 202, 254, 0) 100%);
+  border-radius: 20px;
+  margin: 0 5px;
+  padding: 45px 24px 30px 27px;
+}
+
+@media (max-width: 767.5px) {
+  section.widget-philosophy .h2 {
+    margin-bottom: 14.359vw;
+  }
+  section.widget-philosophy {
+    padding-bottom: 25.641vw;
+  }
+  .philosophy__item {
+    margin-bottom: 18.462vw;
+    padding: 14.359vw 4.872vw 5.897vw 4.872vw;
+  }
+  .philosophy__icon-wrapper {
+    min-height: auto;
+    margin-bottom: 8.205vw;
+    img {
+      width: 8.082vw;
+    }
+  }
+  .philosophy__item:last-child {
+    margin-bottom: 0;
+  }
+}

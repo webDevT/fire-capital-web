@@ -1,0 +1,43 @@
+section.contact-page-head {
+  padding-top: 205px;
+  padding-bottom: 163px;
+  .h2 {
+    text-align: left;
+  }
+}
+.contact-page-head__img {
+  position: absolute;
+  top: 205px;
+  right: 0;
+  width: 488px;
+  height: 770px;
+  overflow: hidden;
+  border-top-left-radius: 100px;
+  img {
+    height: 770px;
+    min-width: 100%;
+    object-fit: cover;
+    object-position: left -100px bottom;
+  }
+}
+.contact-page-head__img:after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(180deg, rgba(3, 20, 172, 0.6) 0%, rgba(255, 255, 255, 0) 100%);
+  opacity: 0.6;
+}
+
+.contact-sub-title {
+  width: 700px;
+  max-width: 100%;
+  margin-bottom: 32px;
+}
+@media (max-width: 1440px) {
+  .contact-page-head__img {
+    width: 30vw;
+  }
+}

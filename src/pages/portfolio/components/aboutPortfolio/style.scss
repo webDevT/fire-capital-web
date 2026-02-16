@@ -1,0 +1,29 @@
+section.about-portfolio {
+  padding-top: 160px;
+  padding-bottom: 160px;
+  p {
+    padding-left: 181px;
+  }
+}
+.about-portfolio__title {
+  color: $orange;
+  font-size: 54px;
+  font-weight: 600;
+  margin-bottom: 54px;
+}
+
+@media (max-width: 992px) {
+  section.about-portfolio {
+    padding-top: 25.641vw;
+    padding-bottom: 25.641vw;
+    .text-24 {
+      padding-left: 0;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .about-portfolio {
+    background: linear-gradient(180deg, rgba(197, 202, 254, 0.22) 0%, rgba(197, 202, 254, 0) 100%);
+  }
+}

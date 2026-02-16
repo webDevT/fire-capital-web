@@ -1,0 +1,80 @@
+section.widget-by-the-numbers {
+  padding-top: 123px;
+  padding-bottom: 104px;
+  background: linear-gradient(180deg, #020c63 0%, #0314ac 100%);
+  color: #fff;
+  .col-md-4:first-child .by-the-numbers__item {
+    padding-top: 52px;
+    background: transparent;
+    .by-the-numbers__item-value {
+      font-size: 48px;
+      font-weight: 600;
+    }
+  }
+}
+
+.by-the-numbers__item {
+  background: linear-gradient(180deg, rgba(197, 202, 254, 0.22) 0%, rgba(197, 202, 254, 0) 100%);
+  border-radius: 20px;
+  width: 344px;
+  max-width: 100%;
+  height: 364px;
+  margin-bottom: 64px;
+  padding-top: 91px;
+  padding-left: 33px;
+  padding-right: 33px;
+}
+.by-the-numbers__item-value {
+  font-size: 70px;
+  font-weight: 600;
+}
+.by-the-numbers__item-title {
+  font-size: 24px;
+}
+
+@media (max-width: 992px) {
+  .by-the-numbers__item-value {
+    font-size: 50px;
+  }
+  .by-the-numbers__item-title {
+    font-size: 18px;
+  }
+  .by-the-numbers__item {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  section.widget-by-the-numbers .col-md-4:first-child .by-the-numbers__item .by-the-numbers__item-value {
+    font-size: 42px;
+  }
+}
+
+@media (max-width: 767.5px) {
+  section.widget-by-the-numbers .col-md-4:first-child .by-the-numbers__item {
+    height: auto;
+    padding-top: 0;
+    padding: 0;
+  }
+  section.widget-by-the-numbers {
+    margin-top: 25.641vw;
+    padding-top: 16.154vw;
+    padding-bottom: 26.41vw;
+  }
+  .by-the-numbers__item {
+    width: 100%;
+    margin-bottom: 20.513vw;
+    height: 79.487vw;
+    padding: 16.667vw 8.205vw 16.667vw 8.205vw;
+  }
+  section.widget-by-the-numbers .col-md-4:first-child .by-the-numbers__item .by-the-numbers__item-value {
+    font-size: 10.256vw;
+    text-transform: capitalize;
+    width: 80%;
+  }
+  .by-the-numbers__item-value {
+    font-size: 15.385vw;
+    margin-bottom: 3vw;
+  }
+  .by-the-numbers__item-title {
+    font-size: 6.154vw;
+  }
+}

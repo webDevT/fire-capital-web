@@ -1,0 +1,73 @@
+section.main-page-head {
+  min-height: 100vh;
+  max-height: 100vh;
+  background: linear-gradient(180deg, #020c63 0%, #0314ac 100%);
+  display: flex;
+  align-items: center;
+  padding-top: 101px;
+
+  .container {
+    display: flex;
+    align-items: center;
+    width: 1393px;
+  }
+  .col-md-6 {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+.gaph-image {
+  width: 100%;
+}
+.main-page-head {
+  .widget-title {
+    font-size: 56px;
+    color: #fff;
+    font-weight: 600;
+    span {
+      color: $orange;
+    }
+  }
+  .button {
+    margin-top: 32px;
+  }
+}
+@media (max-width: 1200px) {
+  .main-page-head .widget-title {
+    font-size: 50px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .main-page-head .widget-title {
+    font-size: 4.5vw;
+  }
+}
+
+@media (max-width: 767.5px) {
+  section.main-page-head {
+    padding-top: 22vw;
+    height: auto;
+    max-height: 500vw;
+    padding-bottom: 10vw;
+  }
+  .main-page-head .container {
+    position: relative;
+    padding-bottom: 20vw;
+    .button {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+    }
+  }
+  .main-page-head .widget-title {
+    font-size: 10.256vw;
+    padding-left: 1vw;
+  }
+  .gaph-image {
+    width: 92.564vw;
+  }
+}

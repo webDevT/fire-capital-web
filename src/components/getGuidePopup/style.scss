@@ -1,0 +1,116 @@
+.get-free {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background: #fff;
+  border-top: 1px solid rgba(80, 92, 132, 0.3);
+  z-index: 899;
+  .submit-button {
+    width: 79px;
+  }
+  .container {
+    display: flex;
+    width: 1365px;
+  }
+}
+.get-free__wrapper {
+  background: linear-gradient(180deg, rgba(197, 202, 254, 0.22) 0%, rgba(197, 202, 254, 0) 100%);
+  padding-top: 27px;
+  padding-bottom: 22px;
+}
+.form-title-wrapper {
+  display: flex;
+  align-items: center;
+  .text-24 {
+    margin: 0 42px 0 0;
+    font-weight: 500;
+  }
+  .error-message {
+    color: red;
+    padding: 8px;
+  }
+  .error-input {
+    box-shadow: 0 0 2px 1px red;
+  }
+}
+.get-free__text {
+  align-self: flex-end;
+  margin-left: 33px;
+}
+.get-free__close {
+  position: absolute;
+  top: 15px;
+  right: 14px;
+  cursor: pointer;
+}
+@media (max-width: 1440px) {
+  .form-title-wrapper {
+    .text-24 {
+      margin-right: 10px;
+    }
+    .submit-button {
+      padding-left: 25px;
+      padding-right: 25px;
+    }
+  }
+  .get-free__text {
+    margin-left: 10px;
+  }
+  .get-free {
+    .container {
+      width: 95vw;
+    }
+  }
+}
+
+@media (max-width: 1280px) {
+  .get-free {
+    .container {
+      flex-direction: column;
+    }
+  }
+  .get-free__text {
+    margin-top: 10px;
+  }
+}
+@media (max-width: 992px) {
+  .form-title-wrapper {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .get-free__text {
+    margin-left: 0;
+    align-self: flex-start;
+  }
+}
+@media (max-width: 767.5px) {
+  .form-title-wrapper {
+    .submit-button {
+      padding-left: 0;
+      padding-right: 0;
+      width: 20vw;
+    }
+    .footer__form {
+      width: 100%;
+    }
+    .footer__input {
+      width: 68vw;
+      max-width: 68vw;
+    }
+  }
+  .get-free__wrapper {
+    padding-top: 10vw;
+    .footer__form {
+      margin-top: 0;
+      margin-bottom: 0;
+    }
+  }
+  .form-title-wrapper .text-24 {
+    margin-top: 0;
+    margin-bottom: 3.561vw;
+  }
+  .get-free__text {
+    margin-top: 1.78vw;
+  }
+}

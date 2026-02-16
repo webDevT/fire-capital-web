@@ -1,0 +1,152 @@
+.widget-customer-review {
+  position: relative;
+  min-height: 427px;
+  .review-title {
+    margin-top: 58px;
+    font-size: 32px;
+    font-weight: 600;
+    text-transform: capitalize;
+    margin-bottom: 24px;
+  }
+}
+.slider-bg {
+  background: linear-gradient(180deg, #020c63 0%, #0314ac 100%);
+  border-radius: 40px 0px 0px 40px;
+  color: #fff;
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 55.886vw;
+  height: 427px;
+}
+.slider-wrapper {
+  background: url('@/assets/svg/dots.svg');
+  background-repeat: no-repeat;
+  color: #fff;
+  top: 30px;
+  left: 40px;
+}
+.slider-item {
+  padding-top: 40px;
+  padding-left: 64px;
+}
+.slider-buttons {
+  position: relative;
+  z-index: 99;
+  display: flex;
+  width: 100%;
+  justify-content: flex-end;
+  width: 576px;
+  max-width: 100%;
+  margin-left: 100px;
+}
+.slider-item__content {
+  width: 576px;
+  max-width: 100%;
+  // height: 100%;
+  // display: flex;
+  // flex-direction: column;
+  // justify-content: center;
+}
+.review__text {
+  font-size: 24px;
+}
+.review__author {
+  margin-top: 42px;
+}
+.prev {
+  opacity: 0.4;
+  margin-right: 15px;
+}
+.prev,
+.next {
+  cursor: pointer;
+}
+.widget-customer-review {
+  overflow: hidden;
+}
+
+@media (max-width: 1200px) {
+  .slider-buttons {
+    margin-left: 0;
+  }
+  .slider-item {
+    padding-left: 10px;
+  }
+  .review__text {
+    font-size: 20px;
+  }
+  .review__text {
+    padding-right: 35px;
+  }
+  .slider-item {
+    padding-top: 90px;
+  }
+}
+@media (max-width: 992px) {
+  .slider-item {
+    padding-top: 69px;
+  }
+  .review__text {
+    font-size: 19px;
+  }
+  .slider-buttons {
+    transform: translateY(-50%);
+  }
+}
+
+@media (max-width: 840px) {
+  .slider-item {
+    padding-top: 65px;
+  }
+}
+
+@media (max-width: 767.5px) {
+  .slider-bg {
+    display: none;
+  }
+  .slider-wrapper {
+    background: url('@/assets/svg/dots.svg') no-repeat top 7.949vw left 11.026vw/16.41vw,
+      linear-gradient(180deg, #020c63 0%, #0314ac 100%);
+    border-radius: 40px 0px 0px 40px;
+  }
+  .widget-customer-review .review-title {
+    margin-top: 0;
+  }
+  .widget-customer-review .review-title {
+    font-size: 8.205vw;
+    margin-bottom: 6.154vw;
+  }
+  .slider-wrapper {
+    margin-top: 14.359vw;
+    padding-left: 11.026vw;
+    padding-bottom: 6.923vw;
+    padding-top: 28.205vw;
+  }
+  .review__text {
+    font-size: 4.103vw;
+    padding-right: 8vw;
+    text-transform: capitalize;
+  }
+  .slider-buttons {
+    transform: translateY(-170%);
+    width: 100%;
+    img {
+      width: 2.821vw;
+    }
+  }
+  .slider-item {
+    padding-top: 0;
+  }
+  .widget-customer-review {
+    .col-md-7 {
+      padding-left: 0;
+    }
+  }
+  .slider-item__content {
+    width: 85%;
+  }
+  .prev {
+    margin-right: 3.788vw;
+  }
+}

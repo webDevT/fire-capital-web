@@ -1,0 +1,45 @@
+section.widget-advisors {
+  .advisor-item__content {
+    border: none;
+  }
+  .h2 {
+    margin-bottom: 80px;
+  }
+  .col-md-6 {
+    margin-bottom: 32px;
+  }
+  .title-32 {
+    text-transform: capitalize;
+  }
+  .advisor-link {
+    margin-right: 5px;
+    margin-top: 5px;
+    align-self: flex-end;
+    display: block;
+  }
+  .advisor-wrapper {
+    display: flex;
+    flex-direction: column;
+  }
+  .advisor-item {
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    overflow: hidden;
+    margin: 0 10px;
+    min-height: 100%;
+    height: 100%;
+    .video-img {
+      width: 100%;
+      height: 295px;
+      object-fit: cover;
+    }
+  }
+  .advisor-item__content {
+    background: linear-gradient(180deg, rgba(197, 202, 254, 0.22) 0%, rgba(197, 202, 254, 0) 100%);
+    padding: 17px 13px 20px 13px;
+    height: calc(100% - 295px);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+}

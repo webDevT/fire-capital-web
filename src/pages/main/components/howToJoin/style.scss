@@ -1,0 +1,157 @@
+section.widget-how-to-join {
+  padding-top: 117px;
+  padding-bottom: 140px;
+  background: linear-gradient(180deg, #020c63 0%, #0314ac 100%);
+  color: #fff;
+  .container {
+    width: 1167px;
+    max-width: 91.795vw;
+  }
+  .h2 {
+    text-align: center;
+    width: 912px;
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 82px;
+  }
+  .h3 {
+    margin-bottom: 16px;
+    text-align: center;
+  }
+}
+.how-to-join__icon-wrapper {
+  height: 115px;
+  margin-bottom: 31px;
+  padding-top: 28px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.icon-circle {
+  width: 85px;
+  height: 85px;
+  background: rgba(226, 228, 254, 0.3);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  position: relative;
+}
+.how-to-join__item-wrapper {
+  margin-left: auto;
+  margin-right: auto;
+  width: 315px;
+  max-width: 100%;
+  //text-align: center;
+}
+.how-to-join__icon-num {
+  background: $orange;
+  color: #fff;
+  width: 49px;
+  height: 49px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  z-index: 1;
+  font-size: 24px;
+  font-weight: 500;
+  transform: translateX(-110%);
+}
+.how-to-join__text {
+  max-width: 100%;
+  
+}
+.how-to-join__list {
+  .how-to-join__item .icon-circle:before {
+    content: url('@/assets/svg/arrow.svg');
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%) translateX(49px);
+    left: 100%;
+  }
+}
+.how-to-join__list .how-to-join__item:last-child .icon-circle:before {
+  display: none;
+}
+
+@media (max-width: 1200px) {
+  .how-to-join__list .how-to-join__item .icon-circle:before {
+    transform: translateY(-50%) translateX(10px) scale(0.8);
+  }
+}
+
+@media (max-width: 992px) {
+  .how-to-join__list .how-to-join__item .icon-circle:before {
+    transform: translateY(-50%) translateX(-25px) scale(0.5);
+  }
+}
+
+@media (max-width: 767.5px) {
+  .how-to-join__list .how-to-join__item .icon-circle:before {
+    display: none;
+  }
+  .how-to-join__text {
+    width: 100%;
+  }
+  section.widget-how-to-join {
+    padding-top: 26.154vw;
+    padding-bottom: 26.154vw;
+    .h2 {
+      text-align: left;
+      font-weight: 500;
+      margin-bottom: 18.462vw;
+    }
+  }
+  .how-to-join__item {
+    padding-top: 20.513vw;
+    background: url('@/assets/svg/down.svg');
+    background-repeat: no-repeat;
+    background-size: 2.051vw;
+    background-position: top 4.359vw left 14.5vw;
+    img {
+      width: 7.949vw;
+    }
+  }
+  .how-to-join__item:first-child {
+    padding-top: 0;
+    background: none;
+  }
+  .how-to-join__icon-wrapper {
+    height: 26.667vw;
+    padding-top: 7.692vw;
+    padding-left: 4vw;
+    margin-bottom: 6.154vw;
+    justify-content: flex-start;
+  }
+  .icon-circle {
+    width: 19.231vw;
+    height: 19.231vw;
+  }
+  .how-to-join__icon-num {
+    width: 12.564vw;
+    height: 12.564vw;
+    left: -1vw;
+    font-size: 6.154vw;
+  }
+  section.widget-how-to-join .h3 {
+    margin-bottom: 4.103vw;
+  }
+  .how-to-join__text {
+    width: 80.769vw;
+  }
+  .how-to-join__item-wrapper {
+    width: 100%;
+  }
+  .how-to-join__icon-num {
+    transform: translateX(0);
+  }
+  section.widget-how-to-join .h3 {
+    text-align: left;
+  }
+}

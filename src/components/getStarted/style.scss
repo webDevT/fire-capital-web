@@ -1,0 +1,114 @@
+section.widget-get-started {
+  .text-32 {
+    margin-bottom: 24px;
+  }
+}
+.get-started-content {
+  background: linear-gradient(180deg, #020c63 0%, #0314ac 100%);
+  border-radius: 20px;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 65px;
+  padding-right: 87px;
+  margin-bottom: 97px;
+}
+.get-started__contact {
+  display: flex;
+  flex-direction: column;
+  border-radius: 10px;
+  overflow: hidden;
+  min-width: 381px;
+  max-width: 100%;
+  position: relative;
+  top: -54px;
+}
+.get-started__contact-content {
+  background: #fff;
+  padding-top: 37px;
+  padding-bottom: 31px;
+  padding-left: 28px;
+  margin-top: -10px;
+
+  a,
+  div {
+    display: block;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 21px;
+    color: $bluefont;
+    img {
+      margin-right: 16px;
+      display: inline-block;
+    }
+  }
+  a:hover {
+    color: $bluefont;
+  }
+}
+.get-started__tect-wrapper {
+  width: 500px;
+  max-width: 70%;
+}
+
+@media (max-width: 1160px) {
+  .get-started-content {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+  .get-started__tect-wrapper {
+    width: 50%;
+  }
+}
+
+@media (max-width: 992px) {
+  .get-started__tect-wrapper {
+    width: 40%;
+    padding-left: 3.077vw;
+    padding-right: 3.077vw;
+  }
+}
+@media (max-width: 767.5px) {
+  .get-started-content {
+    flex-direction: column;
+    padding-top: 22.051vw;
+    padding-bottom: 11.026vw;
+    margin-bottom: 0;
+    position: relative;
+    top: 20.202vw;
+  }
+  .get-started__tect-wrapper {
+    width: 100%;
+    max-width: 100%;
+  }
+  .get-started__contact {
+    width: 100%;
+    margin-top: 18.462vw;
+    border-radius: 3vw;
+    top: 0;
+  }
+  section.widget-get-started .text-32 {
+    font-size: 8.205vw;
+    margin-bottom: 4.103vw;
+  }
+  .get-started__contact-content a {
+    font-size: 4.615vw;
+  }
+  .get-started__contact-content a img {
+    width: 4vw;
+    margin-right: 2vw;
+  }
+  .get-started__contact {
+    min-width: 100%;
+    img {
+      max-width: 100%;
+    }
+  }
+  .get-started__contact-content {
+    padding-left: 3.846vw;
+    padding-right: 3.846vw;
+  }
+ 
+}
