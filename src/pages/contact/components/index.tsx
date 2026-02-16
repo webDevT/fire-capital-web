@@ -1,2 +1,2 @@
 export { default as Head } from './head';
-export { default as ScheduleCall } from './ScheduleCall';
+export { default as ScheduleCall } from './scheduleCall';
