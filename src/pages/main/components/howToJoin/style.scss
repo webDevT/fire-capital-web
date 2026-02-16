@@ -69,7 +69,7 @@ section.widget-how-to-join {
 }
 .how-to-join__list {
   .how-to-join__item .icon-circle:before {
-    content: url('@/assets/svg/arrow.svg');
+    content: url('../../../../assets/svg/arrow.svg');
     position: absolute;
     top: 50%;
     transform: translateY(-50%) translateX(49px);
@@ -110,7 +110,7 @@ section.widget-how-to-join {
   }
   .how-to-join__item {
     padding-top: 20.513vw;
-    background: url('@/assets/svg/down.svg');
+    background: url('../../../../assets/svg/down.svg');
     background-repeat: no-repeat;
     background-size: 2.051vw;
     background-position: top 4.359vw left 14.5vw;

@@ -20,7 +20,7 @@
   height: 427px;
 }
 .slider-wrapper {
-  background: url('@/assets/svg/dots.svg');
+  background: url('../../../../assets/svg/dots.svg');
   background-repeat: no-repeat;
   color: #fff;
   top: 30px;
@@ -106,7 +106,7 @@
     display: none;
   }
   .slider-wrapper {
-    background: url('@/assets/svg/dots.svg') no-repeat top 7.949vw left 11.026vw/16.41vw,
+    background: url('../../../../assets/svg/dots.svg') no-repeat top 7.949vw left 11.026vw/16.41vw,
       linear-gradient(180deg, #020c63 0%, #0314ac 100%);
     border-radius: 40px 0px 0px 40px;
   }

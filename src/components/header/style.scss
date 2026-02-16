@@ -52,7 +52,7 @@
   align-items: center;
 }
 .lets-talk:after {
-  content: url('../src/assets/svg/material-symbols-call.svg');
+  content: url('../../assets/svg/material-symbols-call.svg');
   margin-left: 8px;
   margin-top: 4px;
 }
@@ -91,7 +91,7 @@
     color: $orange;
   }
   .lets-talk:after {
-    content: url('@/assets/svg/material-symbols_call2.svg');
+    content: url('../../assets/svg/material-symbols_call2.svg');
   }
 }
 @media (max-width: 1440px) {
